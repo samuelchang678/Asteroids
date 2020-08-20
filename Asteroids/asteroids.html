@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <style>
+            @import url(style.css);
+            p.highlight {
+                color: red;
+            }
+            svg {
+                background-color: rgb(41, 41, 36);
+            }
+        </style>
+        <script src="svgelement.js"></script>
+        <script src="observable.js"></script>
+        <script src="asteroids.js"></script>
+    </head>
+    <body>
+        <h1>Asteroids</h1>
+        <div style="width:900px; height: 100;">  
+             <p
+              style="text-align:left; color:grey; font-size:15px; font-family:'Times New Roman', Times, serif"
+              id="description"
+            >
+              w=foward, a=rotate anticlockwise, d=rotate clockwise, space=shoot
+              
+            </p>
+            <p
+              style="text-align:left; color:grey; font-size:20px; font-family:'Times New Roman', Times, serif"
+              id="lives"
+            >
+              lives: 3
+              <!-- Lives: ❤️❤️❤️ -->
+            </p>
+            <p
+              style="text-align:left; color:grey; font-size:20px; font-family:'Times New Roman', Times, serif"
+              id="score"
+            >
+              score:0
+              
+            </p>
+          </div>
+        <svg id="canvas" width="600" height="600"/>
+        </svg>
+    </body>
+</html>
